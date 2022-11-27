@@ -60,6 +60,28 @@ a:visited {
     color: #94B6AB;
 }
 
+body {
+    background-color: #94B6AB;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.syllabus {
+    flex: 1;
+}
+
+.syllabus ul {
+    margin: 8px;
+    padding-left: 20px;
+}
+
+.main-page {
+    flex: 4;
+}
+
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
     .logo {
