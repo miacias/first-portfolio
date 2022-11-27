@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dyslexie, Tahoma, sans-serif;
+  }
+
+.page-header {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 350px;
+    width: 100%;
+    background-color: #3E4350;
+    color: #94B6AB;
+    text-align: center;
+}
+
+/* .brand {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+} */
+
+.logo {
+    max-width: 50%;
+    padding: 10px 0 1px 1px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    height: 60px;
+    padding: 8%;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+}
+
+a:link {
+    color: #ECEECA;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover {
+    color: #B35072;
+    text-decoration: none;
+}
+
+a:active {
+    color: #B35072;
+    text-decoration: line-through;
+}
+
+a:visited {
+    color: #94B6AB;
+}
+
+/* TABLET SIZING */
+@media screen and (max-width: 992px) {
+    .logo {
+        max-width: 40%;
+        flex: 1 0 auto;
+    }
+}
+
+/* LARGE PHONE SIZING */
+@media screen and (max-width: 768px) {
+    .page-header {
+        /* flex-direction: column; */
+    }
+
+    .logo {
+        max-width: 30%;
+        flex: 1 0 auto;
+
+    }
+}
+
+/* SMALL PHONE SIZING */
+@media screen and (max-width: 576px) {
+    .page-header {
+        /* flex-direction: column; */
+    }
+    
+    .logo {
+        max-width: 20%;
+        flex: 1 0 auto;
+    }
+}
