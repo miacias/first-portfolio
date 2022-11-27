@@ -66,11 +66,13 @@ body {
 
 main {
     display: flex;
-    margin: 20px;
 }
 
 .syllabus {
-    flex: 1;
+    flex: 20%;
+    background-color: #763E83;
+    margin: 0 20px 0 0;
+    padding: 24px;
 }
 
 .syllabus ul {
@@ -79,7 +81,7 @@ main {
 }
 
 .main-page {
-    flex: 4;
+    flex: 80%;
 }
 
 /* TABLET SIZING */
@@ -99,7 +101,14 @@ main {
     .logo {
         max-width: 30%;
         flex: 1 0 auto;
+    }
 
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .syllabus {
+        margin: 0;
     }
 }
 
