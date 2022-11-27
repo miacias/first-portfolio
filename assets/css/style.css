@@ -6,22 +6,19 @@
   }
 
 .page-header {
-    /* background-image: url(/assets/images/purple-geode-background-distortion.png);
-    background-size: cover;
-    height: 800px; */
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    height: 100%;
     width: 100%;
     background-color: #3E4350;
     color: #94B6AB;
 }
 
 .brand {
-    /* display: flex;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
@@ -44,18 +41,28 @@
 a:link {
     color: #ECEECA;
     text-decoration: none;
+    font-weight: 900;
 }
 
-a:hover, a:active {
+a:hover {
     color: #B35072;
     text-decoration: none;
+}
+
+a:active {
+    color: #B35072;
+    text-decoration: line-through;
+}
+
+a:visited {
+    color: #94B6AB;
 }
 
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
     .logo {
         max-width: 40%;
-        flex: 1 1 auto;
+        flex: 1 0 auto;
     }
 }
 
@@ -67,7 +74,7 @@ a:hover, a:active {
 
     .logo {
         max-width: 30%;
-        flex: 1 1 auto;
+        flex: 1 0 auto;
 
     }
 }
@@ -80,7 +87,6 @@ a:hover, a:active {
     
     .logo {
         max-width: 20%;
-        flex: 1 1 auto;
+        flex: 1 0 auto;
     }
-
 }
