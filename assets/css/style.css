@@ -71,6 +71,7 @@ main {
 .syllabus {
     flex: 20%;
     background-color: #763E83;
+    color: #ECEECA;
     margin: 0 20px 0 0;
     padding: 24px;
 }
