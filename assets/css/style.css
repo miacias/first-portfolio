@@ -7,7 +7,7 @@
 
 .page-header {
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -15,12 +15,13 @@
     width: 100%;
     background-color: #3E4350;
     color: #94B6AB;
+    text-align: center;
 }
 
-.brand {
+/* .brand {
     flex-wrap: wrap;
     justify-content: flex-start;
-}
+} */
 
 .logo {
     max-width: 50%;
