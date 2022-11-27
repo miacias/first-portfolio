@@ -6,11 +6,12 @@
   }
 
 .page-header {
-    background-image: url(/assets/images/purple-geode-background-distortion.png);
+    /* background-image: url(/assets/images/purple-geode-background-distortion.png);
     background-size: cover;
     height: 800px;
-    color: white;
-    
+    color: white; */
+    align-items: center;
+
 }
 
 .brand {
@@ -28,4 +29,27 @@
     display: flex;
     /* justify-content: center; */
     align-items: flex-end;
+    line-height: 40px;
+    height: 60px;
+}
+
+/* TABLET SIZING */
+@media screen and (max-width: 992px) {
+    .logo {
+        max-width: 180px;
+    }
+}
+
+/* LARGE PHONE SIZING */
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 160px;
+    }
+}
+
+/* SMALL PHONE SIZING */
+@media screen and (max-width: 576px) {
+    .logo {
+        max-width: 140px;
+    }
 }
