@@ -135,15 +135,12 @@ main h3, p {
 
 .card {
     height: 400px;
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 300px;
+    /* width: 30%; */
+    /* display: flex; */
+    flex-direction: row; */
+    /* flex-wrap: wrap;
     object-position: top;
-}
-
-.card img {
-    width: 600%;
 }
 
 
@@ -161,6 +158,7 @@ main h3, p {
     font-size: 80%;
     font-style: italic;
 }
+.TEXT-BLOCK ISSUE
 bottom: 1px and right: 1px are 
 a problem because they are fixed on the page 
 instead of relative to the image or div box */
