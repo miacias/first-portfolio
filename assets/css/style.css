@@ -90,7 +90,7 @@ main h3, p {
     padding: 4%;
 }
 
-.portfolio div {
+#portfolio div {
     background-color: #B35072;
     border-radius: 20px;
     margin: 1%;
@@ -106,7 +106,7 @@ main h3, p {
     object-position: top;
 }
 
-.portfolio img {
+#portfolio img {
     background-color: #B35072;
     border-radius: 16px;
     object-fit: cover;
@@ -115,11 +115,11 @@ main h3, p {
     position: relative;
 }
 
-.portfolio div:hover {
+#portfolio div:hover {
     background-color: #763E83;
 }
 
-.portfolio img:hover {
+#portfolio img:hover {
     animation-duration: 3s;
     animation-name: show-off;
 }
@@ -139,7 +139,14 @@ main h3, p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    object-position: top;
 }
+
+.card img {
+    width: 600%;
+}
+
+
 
 /* .text-block {
     display: flex;
