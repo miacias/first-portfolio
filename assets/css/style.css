@@ -16,12 +16,8 @@
     background-color: #3E4350;
     color: #94B6AB;
     text-align: center;
+    padding-bottom: 8px;
 }
-
-/* .brand {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-} */
 
 .logo {
     max-width: 50%;
@@ -58,6 +54,7 @@ a:active {
 
 a:visited {
     color: #94B6AB;
+    text-decoration: line-through;
 }
 
 body {
@@ -66,6 +63,12 @@ body {
 
 main {
     display: flex;
+    color: #3E4350;
+    line-height: 1.5;
+}
+
+main h3, p {
+    padding-bottom: 12px;
 }
 
 .syllabus {
@@ -73,7 +76,8 @@ main {
     background-color: #763E83;
     color: #ECEECA;
     margin: 0 20px 0 0;
-    padding: 24px;
+    /* padding: 24px; */
+    padding: 4%;
 }
 
 .syllabus ul {
@@ -83,6 +87,7 @@ main {
 
 .main-page {
     flex: 80%;
+    padding: 4%;
 }
 
 /* TABLET SIZING */
