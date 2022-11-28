@@ -68,16 +68,16 @@ main {
 }
 
 main h3, p {
-    padding-bottom: 12px;
+    padding-bottom: 2%;
 }
 
 .syllabus {
+    display: block;
     flex: 20%;
     background-color: #763E83;
     color: #ECEECA;
     margin: 0 20px 0 0;
     padding: 4%;
-    height: 100%;
 }
 
 .syllabus ul {
@@ -90,6 +90,11 @@ main h3, p {
     flex: 80%;
     padding: 4%;
     flex-wrap: wrap;
+}
+
+#portfolio {
+    /* margin-bottom: 10%; */
+    /* display: block; */
 }
 
 #portfolio div {
@@ -136,7 +141,6 @@ main h3, p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 400px;
 }
 
 .card {
