@@ -90,15 +90,12 @@ main h3, p {
     padding: 4%;
 }
 
-.portfolio div {
-    border-width: 0;
+#portfolio div {
     background-color: #B35072;
     border-radius: 20px;
     margin: 1%;
     padding: 2%;
-    /* align-items: center; */
     justify-content: center;
-    /* max-height: 300px; */
 }
 
 .first-card {
@@ -109,20 +106,20 @@ main h3, p {
     object-position: top;
 }
 
-.portfolio img {
+#portfolio img {
     background-color: #B35072;
     border-radius: 16px;
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* overflow: hidden; */
+    position: relative;
 }
 
-.portfolio div:hover {
+#portfolio div:hover {
     background-color: #763E83;
 }
 
-.portfolio div img:hover {
+#portfolio img:hover {
     animation-duration: 3s;
     animation-name: show-off;
 }
@@ -135,6 +132,38 @@ main h3, p {
         object-position: bottom;
     }
 }
+
+.card {
+    height: 400px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-position: top;
+}
+
+.card img {
+    width: 600%;
+}
+
+
+
+/* .text-block {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color:#ECEECA;
+    padding: 1%;
+    margin: 1%;
+    bottom: 1px;
+    right: 1px;
+    max-width: 200px;
+    font-size: 80%;
+    font-style: italic;
+}
+bottom: 1px and right: 1px are 
+a problem because they are fixed on the page 
+instead of relative to the image or div box */
 
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
