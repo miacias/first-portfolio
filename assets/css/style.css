@@ -90,6 +90,23 @@ main h3, p {
     padding: 4%;
 }
 
+.portfolio div {
+    border-width: 0;
+    background-color: #B35072;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 2%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.portfolio img {
+    background-color: #B35072;
+    border-radius: 16px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
     .logo {
