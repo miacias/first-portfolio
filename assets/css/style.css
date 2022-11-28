@@ -91,14 +91,11 @@ main h3, p {
 }
 
 .portfolio div {
-    border-width: 0;
     background-color: #B35072;
     border-radius: 20px;
     margin: 1%;
     padding: 2%;
-    /* align-items: center; */
     justify-content: center;
-    /* max-height: 300px; */
 }
 
 .first-card {
@@ -115,7 +112,6 @@ main h3, p {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -123,7 +119,7 @@ main h3, p {
     background-color: #763E83;
 }
 
-.portfolio div img:hover {
+.portfolio img:hover {
     animation-duration: 3s;
     animation-name: show-off;
 }
@@ -140,7 +136,8 @@ main h3, p {
 .card {
     height: 400px;
     width: 30%;
-    display: block;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
