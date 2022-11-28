@@ -16,12 +16,8 @@
     background-color: #3E4350;
     color: #94B6AB;
     text-align: center;
+    padding-bottom: 8px;
 }
-
-/* .brand {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-} */
 
 .logo {
     max-width: 50%;
@@ -58,6 +54,40 @@ a:active {
 
 a:visited {
     color: #94B6AB;
+    text-decoration: line-through;
+}
+
+body {
+    background-color: #94B6AB;
+}
+
+main {
+    display: flex;
+    color: #3E4350;
+    line-height: 1.5;
+}
+
+main h3, p {
+    padding-bottom: 12px;
+}
+
+.syllabus {
+    flex: 20%;
+    background-color: #763E83;
+    color: #ECEECA;
+    margin: 0 20px 0 0;
+    /* padding: 24px; */
+    padding: 4%;
+}
+
+.syllabus ul {
+    margin: 8px;
+    padding-left: 20px;
+}
+
+.main-page {
+    flex: 80%;
+    padding: 4%;
 }
 
 /* TABLET SIZING */
@@ -77,7 +107,14 @@ a:visited {
     .logo {
         max-width: 30%;
         flex: 1 0 auto;
+    }
 
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .syllabus {
+        margin: 0;
     }
 }
 
