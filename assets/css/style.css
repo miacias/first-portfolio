@@ -98,19 +98,42 @@ main h3, p {
     padding: 2%;
     /* align-items: center; */
     justify-content: center;
-    max-height: 300px;
+    /* max-height: 300px; */
 }
 
 .first-card {
     height: 400px;
 }
 
+.first-card img {
+    object-position: top;
+}
+
 .portfolio img {
     background-color: #B35072;
     border-radius: 16px;
     object-fit: cover;
-    max-width: 100%;
-    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.portfolio div:hover {
+    background-color: #763E83;
+}
+
+.portfolio div img:hover {
+    animation-duration: 3s;
+    animation-name: show-off;
+}
+
+@keyframes show-off {
+    from{
+        object-position: top;
+    }
+    to{
+        object-position: bottom;
+    }
 }
 
 /* TABLET SIZING */
