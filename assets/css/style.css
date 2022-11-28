@@ -119,17 +119,20 @@ main h3, p {
 }
 
 .portfolio div:hover {
-    opacity: 70%;
+    background-color: #763E83;
+}
+
+.portfolio div img:hover {
     animation-duration: 3s;
     animation-name: show-off;
 }
 
 @keyframes show-off {
     from{
-        height: 100px;
+        object-position: top;
     }
     to{
-        height: 800px:
+        object-position: bottom;
     }
 }
 
