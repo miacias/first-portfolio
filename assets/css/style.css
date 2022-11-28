@@ -88,6 +88,7 @@ main h3, p {
 .main-page {
     flex: 80%;
     padding: 4%;
+    flex-wrap: wrap;
 }
 
 #portfolio div {
