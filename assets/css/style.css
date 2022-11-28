@@ -98,13 +98,19 @@ main h3, p {
     padding: 2%;
     /* align-items: center; */
     justify-content: center;
+    max-height: 300px;
+}
+
+.first-card {
+    height: 400px;
 }
 
 .portfolio img {
     background-color: #B35072;
     border-radius: 16px;
-    object-fit: contain;
+    object-fit: cover;
     max-width: 100%;
+    overflow: hidden;
 }
 
 /* TABLET SIZING */
