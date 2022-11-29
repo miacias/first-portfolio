@@ -102,11 +102,6 @@ main h3, p {
     border-radius: 20px;
     margin: 1%;
     padding: 2%;
-    justify-content: center;
-}
-
-.first-card {
-    height: 400px;
 }
 
 #portfolio img {
@@ -137,6 +132,14 @@ main h3, p {
     }
 }
 
+.first-card {
+    height: 400px;
+    background-color: #B35072;
+    margin: 1%;
+    padding: 2%;
+    justify-content: center;
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
@@ -145,6 +148,10 @@ main h3, p {
 
 .card {
     width: 31%;
+    height: 400px;
+    margin: 1%;
+    padding: 2%;
+    justify-content: center;
 }
 
 
