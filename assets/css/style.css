@@ -92,10 +92,10 @@ main h3, p {
     flex-wrap: wrap;
 }
 
-#portfolio {
-    /* margin-bottom: 10%; */
-    /* display: block; */
-}
+/* #portfolio {
+    margin-bottom: 10%; 
+    display: block; 
+} */
 
 #portfolio div {
     background-color: #B35072;
