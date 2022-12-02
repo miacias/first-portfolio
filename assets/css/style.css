@@ -54,6 +54,11 @@ a:link {
     font-weight: 900;
 }
 
+a:visited {
+    color: var(--light-green);
+    text-decoration: line-through;
+}
+
 a:hover {
     color: var(--pink);
     text-decoration: none;
@@ -61,11 +66,6 @@ a:hover {
 
 a:active {
     color: var(--pink);
-    text-decoration: line-through;
-}
-
-a:visited {
-    color: var(--light-green);
     text-decoration: line-through;
 }
 
@@ -162,14 +162,14 @@ main h3, p {
 
 .card {
     width: 31%;
-    height: 400px;
+    height: 300px;
     margin: 1%;
     padding: 2%;
     justify-content: center;
 }
 
 .card img {
-    width: 100%;
+    height: 100%;
     /* transform: scale(1.4); */
     background-position: center;
     background-size: cover;
@@ -192,6 +192,21 @@ main h3, p {
     right: 1%;
     border: solid var(--blue-gray);
 }
+
+#contact ul li {
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    background-color: var(--blue-gray);
+    color: var(--pale-yellow);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
