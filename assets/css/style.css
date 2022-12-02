@@ -1,3 +1,11 @@
+:root {
+    --blue-gray: #3E4350;
+    --light-green: #94B6AB;
+    --pink: #B35072;
+    --purple: #763E83;
+    --pale-yellow: #ECEECA;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +21,8 @@
     flex-direction: row;
     height: 350px;
     width: 100%;
-    background-color: #3E4350;
-    color: #94B6AB;
+    background-color: var(--blue-gray);
+    color: var(--light-green);
     text-align: center;
     padding-bottom: 8px;
 }
@@ -37,29 +45,29 @@
 }
 
 a:link {
-    color: #ECEECA;
+    color: var(--pale-yellow);
     text-decoration: none;
     font-weight: 900;
 }
 
 a:hover {
-    color: #B35072;
+    color: var(--pink);
     text-decoration: none;
 }
 
 a:active {
-    color: #B35072;
+    color: var(--pink);
     text-decoration: line-through;
 }
 
 a:visited {
-    color: #94B6AB;
+    color: var(--light-green);
     text-decoration: line-through;
 }
 
 body {
-    background-color: #94B6AB;
-    color: #3E4350;
+    background-color: var(--light-green);
+    color: var(--blue-gray);
     line-height: 1.5;
 }
 
@@ -74,8 +82,8 @@ main h3, p {
 .syllabus {
     display: block;
     flex: 20%;
-    background-color: #763E83;
-    color: #ECEECA;
+    background-color: var(--purple);
+    color: var(--pale-yellow);
     margin: 0 20px 0 0;
     padding: 4%;
 }
@@ -98,14 +106,14 @@ main h3, p {
 } */
 
 #portfolio div {
-    background-color: #B35072;
+    background-color: var(--pink);
     border-radius: 20px;
     margin: 1%;
     padding: 2%;
 }
 
 #portfolio img {
-    background-color: #B35072;
+    background-color: var(--pink);
     border-radius: 16px;
     object-fit: cover;
     height: 100%;
@@ -115,7 +123,7 @@ main h3, p {
 }
 
 #portfolio div:hover {
-    background-color: #763E83;
+    background-color: var(--purple);
 }
 
 #portfolio img:hover {
@@ -134,7 +142,7 @@ main h3, p {
 
 .first-card {
     height: 400px;
-    background-color: #B35072;
+    background-color: var(--pink);
     margin: 1%;
     padding: 2%;
     justify-content: center;
