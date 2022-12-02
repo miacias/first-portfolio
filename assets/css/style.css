@@ -4,6 +4,10 @@
     --pink: #B35072;
     --purple: #763E83;
     --pale-yellow: #ECEECA;
+    --border20: 20px;
+    --border16: 26px;
+    --margin1: 1%;
+    --pad2: 2%;
 }
 
 * {
@@ -107,14 +111,14 @@ main h3, p {
 
 #portfolio div {
     background-color: var(--pink);
-    border-radius: 20px;
-    margin: 1%;
-    padding: 2%;
+    border-radius: var(--border20);
+    margin: var(--margin1);
+    padding: var(--pad2);
 }
 
 #portfolio img {
     background-color: var(--pink);
-    border-radius: 16px;
+    border-radius: var(--border16);
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -143,8 +147,8 @@ main h3, p {
 .first-card {
     height: 400px;
     background-color: var(--pink);
-    margin: 1%;
-    padding: 2%;
+    margin: var(--margin1);
+    padding: var(--pad2d);
     justify-content: center;
 }
 
@@ -167,20 +171,23 @@ main h3, p {
 }
 
 
-/* .text-block {
+.text-block {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    background-color:#ECEECA;
+    position: relative;
+    background-color:var(--pale-yellow);
+    border-radius: 5%;
     padding: 1%;
-    margin: 1%;
+    margin: var(--margin1);
     bottom: 1px;
     right: 1px;
     max-width: 200px;
     font-size: 80%;
     font-style: italic;
+    bottom: 26%;
+    right: 1%;
 }
-.TEXT-BLOCK ISSUE
+/* .TEXT-BLOCK ISSUE
 bottom: 1px and right: 1px are 
 a problem because they are fixed on the page 
 instead of relative to the image or div box */
