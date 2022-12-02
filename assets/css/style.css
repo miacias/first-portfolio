@@ -154,6 +154,9 @@ main h3, p {
     justify-content: center;
 }
 
+.card img {
+    transform: scale(1.4);
+}
 
 
 /* .text-block {
