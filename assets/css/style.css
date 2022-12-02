@@ -126,11 +126,13 @@ main h3, p {
     object-position: top;
 }
 
-#portfolio div:hover {
+#portfolio div:hover,
+#portfolio div:focus {
     background-color: var(--purple);
 }
 
-#portfolio img:hover {
+#portfolio img:hover,
+#portfolio img:focus {
     animation-duration: 3s;
     animation-name: show-off;
 }
@@ -167,9 +169,11 @@ main h3, p {
 }
 
 .card img {
-    transform: scale(1.4);
+    width: 100%;
+    /* transform: scale(1.4); */
+    background-position: center;
+    background-size: cover;
 }
-
 
 .text-block {
     display: flex;
@@ -186,11 +190,8 @@ main h3, p {
     font-style: italic;
     bottom: 26%;
     right: 1%;
+    border: solid var(--blue-gray);
 }
-/* .TEXT-BLOCK ISSUE
-bottom: 1px and right: 1px are 
-a problem because they are fixed on the page 
-instead of relative to the image or div box */
 
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
@@ -221,6 +222,10 @@ instead of relative to the image or div box */
 
     .card {
         width: 100%;
+    }
+
+    .first-card {
+        height: 500px;
     }
 }
 
