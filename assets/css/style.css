@@ -22,7 +22,7 @@
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     height: 350px;
     width: 100%;
     background-color: var(--blue-gray);
@@ -218,6 +218,21 @@ footer {
     .card {
         width: 48%;
     }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .page-header {
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .nav-bar {
+        display: block;
+    }
 }
 
 /* LARGE PHONE SIZING */
@@ -225,10 +240,6 @@ footer {
     .logo {
         max-width: 30%;
         flex: 1 0 auto;
-    }
-
-    main {
-        flex-direction: column-reverse;
     }
 
     .syllabus {
