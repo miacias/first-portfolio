@@ -67,6 +67,7 @@ and allows for future wrap for smaller screen sizes */
     align-items: center;
     justify-content: center;
     line-height: 40px;
+    font-size: var(--txt-standard);
 }
 
 /* hide bullet points */
@@ -233,7 +234,7 @@ main p {
 }
 
 #contact {
-    margin: 4% 4%;
+    margin: 4% 2%;
 }
 
 /* hide bullet points */
@@ -245,7 +246,7 @@ footer {
     display: flex;
     background-color: var(--blue-gray);
     color: var(--pale-yellow);
-    height: 200px;
+    height: 120px;
     justify-content: center;
     align-items: center;
 }
