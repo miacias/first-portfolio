@@ -1,82 +1,124 @@
+/* Use ROOT to set re-usable variables: colors, borders, margins, font sizes */
+:root {
+    --blue-gray: #3E4350;
+    --light-green: #94B6AB;
+    --pink: #B35072;
+    --purple: #763E83;
+    --pale-yellow: #ECEECA;
+    --border20: 20px;
+    --border16: 26px;
+    --margin1: 1%;
+    --pad2: 2%;
+    --txt-standard: 1em;
+    --txt-h1: 3em;
+    --txt-h2: 2em;
+    --txt-h3-h4: 1.5em;
+}
+
+/* WILDCARD does a mild reset to homogenize fonts and spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Dyslexie, Tahoma, sans-serif;
+    font-size: var(--txt-standard);
   }
 
+/* Header size set manually after reset.css using em (scalable measurement) */
+h1 {
+    font-size: var(--txt-h1);
+}
+
+h2 {
+    font-size: var(--txt-h2);
+}
+
+h3, h4 {
+    font-size: var(--txt-h3-h4);
+}
+
+/* display flex separates .BRAND from .NAV-BAR into two columns
+and allows for future wrap for smaller screen sizes */
 .page-header {
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     height: 350px;
     width: 100%;
-    background-color: #3E4350;
-    color: #94B6AB;
+    background-color: var(--blue-gray);
+    color: var(--light-green);
     text-align: center;
-    padding-bottom: 8px;
+    /* padding-bottom: 2%; */
+}
+
+.brand {
+    padding: 2% 0 2% 0;
 }
 
 .logo {
-    max-width: 50%;
-    padding: 10px 0 1px 1px;
+    max-width: 45%;
+    /* padding: 4% 0 0 0; */
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
     line-height: 40px;
-    height: 60px;
-    padding: 8%;
 }
 
+/* hide bullet points */
 .nav-bar ul li {
     list-style-type: none;
 }
 
+/* pseudo-classes for interactive links */
 a:link {
-    color: #ECEECA;
+    color: var(--pale-yellow);
     text-decoration: none;
     font-weight: 900;
 }
 
+a:visited {
+    color: var(--purple);
+    text-decoration: line-through;
+}
+
 a:hover {
-    color: #B35072;
+    color: var(--pink);
     text-decoration: none;
 }
 
 a:active {
-    color: #B35072;
-    text-decoration: line-through;
-}
-
-a:visited {
-    color: #94B6AB;
+    color: var(--pink);
     text-decoration: line-through;
 }
 
 body {
-    background-color: #94B6AB;
-}
-
-main {
-    display: flex;
-    color: #3E4350;
+    background-color: var(--light-green);
+    color: var(--blue-gray);
     line-height: 1.5;
 }
 
-main h3, p {
-    padding-bottom: 12px;
+/* set to flex so child items can use flex properties */
+main {
+    display: flex;
 }
 
+/* space between paragraphs */
+main p {
+    padding-bottom: 2%;
+}
+
+/* aside */
 .syllabus {
+    display: block;
     flex: 20%;
-    background-color: #763E83;
-    color: #ECEECA;
+    background-color: var(--purple);
+    color: var(--pale-yellow);
     margin: 0 20px 0 0;
-    /* padding: 24px; */
     padding: 4%;
 }
 
@@ -85,9 +127,127 @@ main h3, p {
     padding-left: 20px;
 }
 
+/* bullet point style */
+.syllabus ul li {
+    list-style-type: circle;
+}
+
+/* main-page wrap means the ASIDE will wrap below MAIN when screen shrinks
+@media screen has flex-direction: reverse-column */
 .main-page {
     flex: 80%;
     padding: 4%;
+    flex-wrap: wrap;
+}
+
+#portfolio div {
+    background-color: var(--pink);
+    border-radius: var(--border20);
+    margin: var(--margin1);
+    padding: var(--pad2);
+}
+
+/* tall images fit in card size and show from top */
+#portfolio img {
+    background-color: var(--pink);
+    border-radius: var(--border16);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-position: top;
+}
+
+/* pseudo-classes for interactive cards and image previews */
+#portfolio div:hover,
+#portfolio div:focus {
+    background-color: var(--purple);
+}
+
+.first-card img:hover,
+.first-card img:focus {
+    animation-duration: 3s;
+    animation-name: show-off;
+}
+
+.card img:hover,
+.card img:focus {
+    animation-duration: 1s;
+    animation-name: show-off;
+}
+
+@keyframes show-off {
+    from{
+        object-position: top;
+    }
+    to{
+        object-position: bottom;
+    }
+}
+
+/* first project is visibly larger than the rest */
+.first-card {
+    height: 400px;
+    background-color: var(--pink);
+    margin: var(--margin1);
+    padding: var(--pad2d);
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31%; /* third of screen size (three across) */
+    height: 300px;
+    margin: 1%;
+    padding: 2%;
+    justify-content: center;
+}
+
+.card img {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* static project labels over top of cards */
+.text-block {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color:var(--pale-yellow);
+    border-radius: 5%;
+    padding: 1%;
+    margin: var(--margin1);
+    bottom: 1px;
+    right: 1px;
+    max-width: 200px;
+    font-size: 80%;
+    font-style: italic;
+    bottom: 26%;
+    right: 1%;
+    border: solid var(--blue-gray);
+}
+
+#contact {
+    margin: 4% 4%;
+}
+
+/* hide bullet points */
+#contact ul li {
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    background-color: var(--blue-gray);
+    color: var(--pale-yellow);
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* TABLET SIZING */
@@ -96,21 +256,17 @@ main h3, p {
         max-width: 40%;
         flex: 1 0 auto;
     }
-}
 
-/* LARGE PHONE SIZING */
-@media screen and (max-width: 768px) {
-    .page-header {
-        /* flex-direction: column; */
-    }
-
-    .logo {
-        max-width: 30%;
-        flex: 1 0 auto;
+    .card {
+        width: 48%; /* half of screen size (two across) */
     }
 
     main {
         flex-direction: column-reverse;
+    }
+
+    .nav-bar {
+        display: block;
     }
 
     .syllabus {
@@ -118,12 +274,31 @@ main h3, p {
     }
 }
 
+/* LARGE PHONE SIZING */
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 30%;
+        flex: 1 0 auto;
+    }
+
+    .page-header {
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        width: 100%; /* all of screen size (one across) */
+    }
+
+    .first-card {
+        height: 500px;
+    }
+}
+
 /* SMALL PHONE SIZING */
 @media screen and (max-width: 576px) {
-    .page-header {
-        /* flex-direction: column; */
-    }
-    
     .logo {
         max-width: 20%;
         flex: 1 0 auto;
