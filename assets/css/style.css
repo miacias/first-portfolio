@@ -8,6 +8,7 @@
     --border16: 26px;
     --margin1: 1%;
     --pad2: 2%;
+    /* add font sizes to root */
 }
 
 * {
@@ -55,7 +56,7 @@ a:link {
 }
 
 a:visited {
-    color: var(--light-green);
+    color: var(--pink);
     text-decoration: line-through;
 }
 
@@ -104,11 +105,6 @@ main h3, p {
     flex-wrap: wrap;
 }
 
-/* #portfolio {
-    margin-bottom: 10%; 
-    display: block; 
-} */
-
 #portfolio div {
     background-color: var(--pink);
     border-radius: var(--border20);
@@ -156,7 +152,7 @@ main h3, p {
 
 .card-container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
 }
 
@@ -233,6 +229,10 @@ footer {
     .nav-bar {
         display: block;
     }
+
+    .syllabus {
+        margin: 0;
+    }
 }
 
 /* LARGE PHONE SIZING */
@@ -240,10 +240,6 @@ footer {
     .logo {
         max-width: 30%;
         flex: 1 0 auto;
-    }
-
-    .syllabus {
-        margin: 0;
     }
 
     .card {
