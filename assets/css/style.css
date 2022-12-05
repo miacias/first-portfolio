@@ -8,6 +8,10 @@
     --border16: 26px;
     --margin1: 1%;
     --pad2: 2%;
+    --txt-standard: 1em;
+    --txt-h1: 3em;
+    --txt-h2: 2em;
+    --txt-h3: 1.5em;
     /* add font sizes to root */
 }
 
@@ -16,7 +20,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Dyslexie, Tahoma, sans-serif;
+    font-size: var(--txt-standard);
   }
+
+h1 {
+    font-size: var(--txt-h1);
+}
+
+h2 {
+    font-size: var(--txt-h2);
+}
+
+h3, h4 {
+    font-size: var(--txt-h3);
+}
 
 .page-header {
     align-items: center;
@@ -38,7 +55,7 @@
 }
 
 .nav-bar {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     line-height: 40px;
     height: 60px;
@@ -56,7 +73,7 @@ a:link {
 }
 
 a:visited {
-    color: var(--pink);
+    color: var(--purple);
     text-decoration: line-through;
 }
 
@@ -127,9 +144,15 @@ main h3, p {
     background-color: var(--purple);
 }
 
-#portfolio img:hover,
-#portfolio img:focus {
+.first-card img:hover,
+.first-card img:focus {
     animation-duration: 3s;
+    animation-name: show-off;
+}
+
+.card img:hover,
+.card img:focus {
+    animation-duration: 1s;
     animation-name: show-off;
 }
 
@@ -197,7 +220,7 @@ footer {
     display: flex;
     background-color: var(--blue-gray);
     color: var(--pale-yellow);
-    height: 100px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
@@ -220,10 +243,10 @@ footer {
     }
 
     .page-header {
-        display: block;
-        flex-wrap: wrap;
+        /* display: block; */
+        /* flex-wrap: wrap; */
         flex-direction: column;
-        height: 700px;
+        /* height: 700px; */
     }
 
     .nav-bar {
