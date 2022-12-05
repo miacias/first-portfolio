@@ -67,6 +67,7 @@ and allows for future wrap for smaller screen sizes */
     align-items: center;
     justify-content: center;
     line-height: 40px;
+    font-size: var(--txt-standard);
 }
 
 /* hide bullet points */
