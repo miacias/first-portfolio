@@ -10,16 +10,20 @@ I learned the value of styling via CSS and the wonders that accompany its more a
 * media queries - dictates the design element changes for specific screens
 
 ## Assets
-The following image demonstrates the web application's appearance at 992px or smaller:
+The following image demonstrates the web application's appearance at 992px or smaller for tablets:
 
-![This is going to be alt text describing how the aside and cards appear differently.](./Images/SCREENSHOT1.png)
+![Portfolio Tablet View: header's logo shrinks, cards resize to two per row.](./assets/images/screencapture-127-0-0-1-5501-portfolio-tablet.png)
 
-The following image demonstrates the web application's appearance at 768px or smaller:
+The following image demonstrates the web application's appearance at 768px or smaller for large mobile phones:
 
-![This is going to be alt text describing how the aside and cards appear differently.](./Images/SCREENSHOT2.png)
+![Portfolio Large Phone View: header's logo shrinks, header navigation flex wraps below branding, aside moves below main page, cards resize to one per row.](./assets/images/screencapture-127-0-0-1-5501-portfolio-large-phone.png)
+
+The following image demonstrates the web application's appearance at 576px or smaller for small mobile phones:
+
+![Portfolio Small Phone View: header's logo shrinks.](./assets/images/screencapture-127-0-0-1-5501-portfolio-small-phone.png)
 
 ## Installation
-N/A
+N/A. [Deployed site here!](miacias.github.io/portfolio)
 
 ## Usage
 This page showcases me, Mia Ciasullo, focusing on my work as a developer while also giving a window into my life as a person. The page displays my work, languages and frameworks learned, and contact information.
