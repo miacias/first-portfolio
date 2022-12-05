@@ -262,10 +262,6 @@ footer {
         width: 48%; /* half of screen size (two across) */
     }
 
-    main {
-        flex-direction: column-reverse;
-    }
-
     .nav-bar {
         display: block;
     }
@@ -287,6 +283,10 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
         height: auto;
+    }
+    
+    main {
+        flex-direction: column-reverse;
     }
 
     .card {
