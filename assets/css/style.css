@@ -1,3 +1,4 @@
+/* Use ROOT to set re-usable variables: colors, borders, margins, font sizes */
 :root {
     --blue-gray: #3E4350;
     --light-green: #94B6AB;
@@ -8,19 +9,40 @@
     --border16: 26px;
     --margin1: 1%;
     --pad2: 2%;
+    --txt-standard: 1em;
+    --txt-h1: 3em;
+    --txt-h2: 2em;
+    --txt-h3-h4: 1.5em;
 }
 
+/* WILDCARD does a mild reset to homogenize fonts and spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Dyslexie, Tahoma, sans-serif;
+    font-size: var(--txt-standard);
   }
 
+/* Header size set manually after reset.css using em (scalable measurement) */
+h1 {
+    font-size: var(--txt-h1);
+}
+
+h2 {
+    font-size: var(--txt-h2);
+}
+
+h3, h4 {
+    font-size: var(--txt-h3-h4);
+}
+
+/* display flex separates .BRAND from .NAV-BAR into two columns
+and allows for future wrap for smaller screen sizes */
 .page-header {
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     height: 350px;
@@ -28,26 +50,31 @@
     background-color: var(--blue-gray);
     color: var(--light-green);
     text-align: center;
-    padding-bottom: 8px;
+    /* padding-bottom: 2%; */
+}
+
+.brand {
+    padding: 2% 0 2% 0;
 }
 
 .logo {
-    max-width: 50%;
-    padding: 10px 0 1px 1px;
+    max-width: 45%;
+    /* padding: 4% 0 0 0; */
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
     line-height: 40px;
-    height: 60px;
-    padding: 8%;
 }
 
+/* hide bullet points */
 .nav-bar ul li {
     list-style-type: none;
 }
 
+/* pseudo-classes for interactive links */
 a:link {
     color: var(--pale-yellow);
     text-decoration: none;
@@ -55,7 +82,7 @@ a:link {
 }
 
 a:visited {
-    color: var(--light-green);
+    color: var(--purple);
     text-decoration: line-through;
 }
 
@@ -75,14 +102,17 @@ body {
     line-height: 1.5;
 }
 
+/* set to flex so child items can use flex properties */
 main {
     display: flex;
 }
 
-main h3, p {
+/* space between paragraphs */
+main p {
     padding-bottom: 2%;
 }
 
+/* aside */
 .syllabus {
     display: block;
     flex: 20%;
@@ -96,18 +126,19 @@ main h3, p {
     margin: 8px;
     padding-left: 20px;
 }
-/* main-page wrap means the aside will wrap when screen shrinks
+
+/* bullet point style */
+.syllabus ul li {
+    list-style-type: circle;
+}
+
+/* main-page wrap means the ASIDE will wrap below MAIN when screen shrinks
 @media screen has flex-direction: reverse-column */
 .main-page {
     flex: 80%;
     padding: 4%;
     flex-wrap: wrap;
 }
-
-/* #portfolio {
-    margin-bottom: 10%; 
-    display: block; 
-} */
 
 #portfolio div {
     background-color: var(--pink);
@@ -116,6 +147,7 @@ main h3, p {
     padding: var(--pad2);
 }
 
+/* tall images fit in card size and show from top */
 #portfolio img {
     background-color: var(--pink);
     border-radius: var(--border16);
@@ -126,14 +158,21 @@ main h3, p {
     object-position: top;
 }
 
+/* pseudo-classes for interactive cards and image previews */
 #portfolio div:hover,
 #portfolio div:focus {
     background-color: var(--purple);
 }
 
-#portfolio img:hover,
-#portfolio img:focus {
+.first-card img:hover,
+.first-card img:focus {
     animation-duration: 3s;
+    animation-name: show-off;
+}
+
+.card img:hover,
+.card img:focus {
+    animation-duration: 1s;
     animation-name: show-off;
 }
 
@@ -146,6 +185,7 @@ main h3, p {
     }
 }
 
+/* first project is visibly larger than the rest */
 .first-card {
     height: 400px;
     background-color: var(--pink);
@@ -156,12 +196,11 @@ main h3, p {
 
 .card-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .card {
-    width: 31%;
+    width: 31%; /* third of screen size (three across) */
     height: 300px;
     margin: 1%;
     padding: 2%;
@@ -170,11 +209,11 @@ main h3, p {
 
 .card img {
     height: 100%;
-    /* transform: scale(1.4); */
     background-position: center;
     background-size: cover;
 }
 
+/* static project labels over top of cards */
 .text-block {
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +232,11 @@ main h3, p {
     border: solid var(--blue-gray);
 }
 
+#contact {
+    margin: 4% 4%;
+}
+
+/* hide bullet points */
 #contact ul li {
     list-style-type: none;
 }
@@ -201,12 +245,10 @@ footer {
     display: flex;
     background-color: var(--blue-gray);
     color: var(--pale-yellow);
-    height: 100px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
-
-/* Testing mobile view */
 
 /* TABLET SIZING */
 @media screen and (max-width: 992px) {
@@ -216,22 +258,19 @@ footer {
     }
 
     .card {
-        width: 48%;
+        width: 48%; /* half of screen size (two across) */
     }
 
     main {
         flex-direction: column-reverse;
     }
 
-    .page-header {
-        display: block;
-        flex-wrap: wrap;
-        flex-direction: column;
-        height: 700px;
-    }
-
     .nav-bar {
         display: block;
+    }
+
+    .syllabus {
+        margin: 0;
     }
 }
 
@@ -242,12 +281,15 @@ footer {
         flex: 1 0 auto;
     }
 
-    .syllabus {
-        margin: 0;
+    .page-header {
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
     }
 
     .card {
-        width: 100%;
+        width: 100%; /* all of screen size (one across) */
     }
 
     .first-card {
