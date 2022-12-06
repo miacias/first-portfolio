@@ -23,7 +23,7 @@ The following image demonstrates the web application's appearance at 576px or sm
 ![Portfolio Small Phone View: header's logo shrinks.](./assets/images/screencapture-127-0-0-1-5501-portfolio-small-phone.png)
 
 ## Installation
-N/A. [Deployed site here!](miacias.github.io/portfolio)
+N/A. [Deployed site here!](https://miacias.github.io/portfolio/)
 
 ## Usage
 This page showcases me, Mia Ciasullo, focusing on my work as a developer while also giving a window into my life as a person. The page displays my work, languages and frameworks learned, and contact information.
