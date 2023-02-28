@@ -12,18 +12,18 @@ I learned the value of styling via CSS and the wonders that accompany its more a
 ## Assets
 The following image demonstrates the web application's appearance at 992px or smaller for tablets:
 
-![Portfolio Tablet View: header's logo shrinks, cards resize to two per row.](./assets/images/screencapture-127-0-0-1-5501-portfolio-tablet.png)
+![Portfolio Tablet View: header's logo shrinks, cards resize to two per row.](./assets/images/readme-screenshots/screencapture-127-0-0-1-5501-portfolio-tablet.png)
 
 The following image demonstrates the web application's appearance at 768px or smaller for large mobile phones:
 
-![Portfolio Large Phone View: header's logo shrinks, header navigation flex wraps below branding, aside moves below main page, cards resize to one per row.](./assets/images/screencapture-127-0-0-1-5501-portfolio-large-phone.png)
+![Portfolio Large Phone View: header's logo shrinks, header navigation flex wraps below branding, aside moves below main page, cards resize to one per row.](./assets/images/readme-screenshots/screencapture-127-0-0-1-5501-portfolio-large-phone.png)
 
 The following image demonstrates the web application's appearance at 576px or smaller for small mobile phones:
 
-![Portfolio Small Phone View: header's logo shrinks.](./assets/images/screencapture-127-0-0-1-5501-portfolio-small-phone.png)
+![Portfolio Small Phone View: header's logo shrinks.](./assets/images/readme-screenshots/screencapture-127-0-0-1-5501-portfolio-small-phone.png)
 
 ## Installation
-N/A. [Deployed site here!](https://miacias.github.io/coding-portfolio/)
+N/A. [Deployed site here!](https://miacias.github.io/coding-portfolio-first-draft/)
 
 ## Usage
 This page showcases me, Mia Ciasullo, focusing on my work as a developer while also giving a window into my life as a person. The page displays my work, languages and frameworks learned, and contact information.
